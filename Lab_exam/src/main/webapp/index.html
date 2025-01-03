@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+<body>
+<div class="">
+    <a href="/bookstore_war/books/addBook">
+        <button>
+            Add a Book
+        </button>
+    </a>
+
+    <hr />
+
+    <a href="/bookstore_war/books/displayBooks">
+        <button>
+            Display Books
+        </button>
+    </a>
+
+    <hr />
+
+    <form action="/bookstore_war/books/deleteBook" method="post">
+        <div>Delete Book</div>
+        <label for="bookID">Book ID:</label>
+        <input type="text" id="bookID" name="id" />
+        <input type="submit" value="Delete" />
+    </form>
+
+    <hr />
+
+    <form action="/bookstore_war/books/searchBooks" method="get">
+        Search for Books
+        <label for="searchTerm">Search Term:</label>
+        <input type="text" id="searchTerm" name="title" />
+        <input type="submit" value="Search" />
+    </form>
+</div>
+</body>
+</html>
