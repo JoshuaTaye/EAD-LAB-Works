@@ -1,0 +1,12 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Bean for DBConnectionManager -->
+    <bean id="dbConnectionManager" class="com.bookstore.step1to7.DBConnectionManager">
+        <property name="url" value="jdbc:mysql://localhost:3306/bookstoredb"/>
+        <property name="username" value="root"/>
+        <property name="password" value="0521"/>
+    </bean>
+</beans>
